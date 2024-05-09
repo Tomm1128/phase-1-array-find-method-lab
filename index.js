@@ -1,7 +1,7 @@
 // code your solution here
 
-const superbowlWin = array => {
-  const yearWon = array.find(findWin)
+const superbowlWin = record => {
+  const yearWon = record.find(findWin)
   if (typeof yearWon === 'undefined'){
     return yearWon
   } else {
