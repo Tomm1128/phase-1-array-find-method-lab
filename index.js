@@ -2,12 +2,11 @@
 
 const superbowlWin = record => {
   const yearWon = record.find(findWin)
-  if (typeof yearWon === 'undefined'){
-    return yearWon
-  } else {
+
+  // return yearWon ? yearWon.year : yearWon
+  if (yearWon) {
     return yearWon.year
   }
 }
 
-
-const findWin = element => element.result === "W"
+const findWin = winner => winner.result === "W"
