@@ -2,8 +2,6 @@
 
 const superbowlWin = record => {
   const yearWon = record.find(findWin)
-
-  // return yearWon ? yearWon.year : yearWon
   if (yearWon) {
     return yearWon.year
   }
